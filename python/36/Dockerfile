@@ -10,6 +10,6 @@ RUN apt update && \
 ENV BUILD_TYPE "local"
 VOLUME /source
 
-COPY ../entrypoint.sh /root/entrypoint.sh
+COPY entrypoint.sh /root/entrypoint.sh
 RUN chmod 755 /root/entrypoint.sh
 ENTRYPOINT [ "/root/entrypoint.sh" ]
